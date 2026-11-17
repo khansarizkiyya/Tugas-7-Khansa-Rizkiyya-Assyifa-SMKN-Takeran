@@ -12,7 +12,7 @@
         <a class="nav-link" href="index.html">Profil</a>
         <a class="nav-link" href="proyek.html" aria-current="page">Proyek</a>
         <a class="nav-link" href="kontak.html">Kontak</a>
-        <button id="btnToggleTema" class="btn-tema" type="button"></button>
+        <button id="btnToggleTema" class="btn-tema" type="button">Mode Gelap</button>
     </nav>
 
     <main class="page-wrapper projects-wrapper">
@@ -23,19 +23,17 @@
                 <p class="bio-text">Karya yang saya buat sambil belajar pengembangan web.</p>
             </header>
 
-            <div class="project-list">
-                <article class="project-item">
-                    <p class="project-label">HTML | CSS | JavaScript</p>
-                    <h2 class="section-heading">Profil Digital Responsif</h2>
-                    <p class="bio-text">
-                        Halaman profil pribadi yang menampilkan informasi, keahlian, dan kontak.
-                        Dibuat dengan tampilan responsif, pilihan mode terang, serta detail keahlian interaktif.
-                    </p>
-                    <a class="project-link" href="index.html">Buka halaman profil</a>
-                </article>
+            <div class="filter" style="margin-top: 20px;">
+                <button type="button" class="tombol-filter aktif" id="filter-semua">Semua</button>
+                <button type="button" class="tombol-filter" id="filter-html">HTML</button>
+                <button type="button" class="tombol-filter" id="filter-css">CSS</button>
+                <button type="button" class="tombol-filter" id="filter-javascript">JavaScript</button>
             </div>
+
+            <p id="jumlah-proyek" class="bio-text" style="margin-top: 10px; font-weight: 600;"></p>
+
+            <div class="project-list" id="daftar-proyek"></div>
         </section>
     </main>
-    <script src="js/script.js" defer></script>
 </body>
 </html>
