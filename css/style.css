@@ -473,6 +473,39 @@ form button {
     text-align: left;
 }
 
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tombol-filter {
+    padding: 9px 16px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px 10px 10px 3px;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tombol-filter:hover {
+    border-color: var(--primary);
+    color: var(--primary-hover);
+    background: var(--surface-3);
+    transform: translateY(-2px);
+}
+
+.tombol-filter.aktif {
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    border-color: transparent;
+    color: var(--primary-dark);
+    box-shadow: 0 3px 14px rgba(233, 169, 209, 0.18);
+}
+
 .project-list {
     display: grid;
     gap: 16px;
@@ -497,6 +530,27 @@ form button {
     background: var(--surface-3);
 }
 
+.project-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 1px solid var(--border-soft);
+    border-radius: 10px 10px 10px 3px;
+}
+
+.project-image-missing {
+    padding: 14px;
+    margin-bottom: 16px;
+    background: var(--surface-3);
+    border: 1px dashed var(--border);
+    border-radius: 10px 10px 10px 3px;
+    color: var(--muted);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
 .project-label {
     color: var(--yellow);
     font-size: 12px;
@@ -519,6 +573,64 @@ form button {
 .project-link:hover {
     color: var(--primary);
     text-decoration: underline;
+}
+
+.repo-section {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.repo-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 14px;
+    list-style: none;
+}
+
+.repo-card {
+    padding: 16px;
+    background: var(--surface-2);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+}
+
+.repo-card-header,
+.repo-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.repo-name,
+.repo-open {
+    color: var(--cyan);
+    font-weight: 700;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.repo-name:hover,
+.repo-open:hover {
+    color: var(--primary);
+}
+
+.repo-desc {
+    margin: 10px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.repo-stars,
+.repo-lang {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.repo-card-footer {
+    justify-content: flex-start;
 }
 
 /* Light Mode */

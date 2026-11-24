@@ -1,0 +1,22 @@
+[
+  {
+    "nama": "HTML5",
+    "level": "Menengah",
+    "deskripsi": "Struktur semantik, formulir, dan tabel data."
+  },
+  {
+    "nama": "CSS3 & Flexbox",
+    "level": "Menengah",
+    "deskripsi": "Tata letak responsif untuk ponsel, tablet, dan desktop."
+  },
+  {
+    "nama": "JavaScript",
+    "level": "Dasar - Menengah",
+    "deskripsi": "Manipulasi DOM, event listener, logika fungsi, dan fetch API."
+  },
+  {
+    "nama": "Git & GitHub",
+    "level": "Dasar",
+    "deskripsi": "Version control, commit, dan push repositori kode."
+  }
+]
